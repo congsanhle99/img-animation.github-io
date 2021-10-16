@@ -1,0 +1,130 @@
+.title {
+    text-align: center;
+    position: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* gradient */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(
+        to right bottom,
+        #8e78ff,
+        #fc7d7b
+    );
+}
+
+.container {
+    height: 100vh;
+}
+
+.wrap {
+    justify-content: space-evenly;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.image .img {
+    width: 240px;
+    min-height: 120px;
+    /* max-height: auto; */
+    float: left;
+    margin: 0px;
+    padding: 3px 0;
+    background-size: contain;
+}
+
+/* Hover Zoom image animation */
+
+.image img {
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    transition: all 1s linear;
+    object-fit: fill;
+}
+
+.image img:hover {
+    width: 360px;
+    min-height: 180px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+
+.ilove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youimg {
+    width: 100px;
+    margin: 16px 0;
+}
+
+/* btn next */
+
+.next {
+    text-align: right;
+    padding: 15px;
+}
+
+.next a {
+    background-color: #6954ef;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 40px;
+    outline: 2px solid #6954ef;
+    outline-offset: 2px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.next a:hover {
+    cursor: pointer;
+    background-color: rgba(153, 50, 204, 0.8);
+    transition: all ease 0.6s;
+    outline: 2px solid darkorchid;
+}
+
+/* Background heart*/
+image {
+    position: absolute;
+    background: url("../img/heart.png");
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    animation: animati 2s linear infinite;
+    background-size: cover;
+}
+
+@keyframes animati {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
+/*  */
+
+/* bottom */
+.bottom {
+    height: 100px;
+}
+/*  */
